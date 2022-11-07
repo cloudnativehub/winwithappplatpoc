@@ -2,6 +2,8 @@ apiVersion: v1
 kind: Service
 metadata:
   name: "humongous-healthcare-api"
+  annotations:
+    # service.beta.kubernetes.io/azure-allowed-service-tags: AzureCloud.EastAsia
   labels:
     app: "humongous-healthcare-api"
 spec:
